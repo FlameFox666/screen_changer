@@ -1,8 +1,17 @@
 extends Node2D
 
-func _on_lose_button_down() -> void:
+# Functions
+
+func game_lose():
 	get_tree().change_scene_to_file("res://losescreen.tscn")
 
+func game_win():
+	get_tree().change_scene_to_file("res://winscreen.tscn")
+
+# Test
+
+func _on_lose_button_down() -> void:
+	game_lose()
 
 func _on_win_button_down() -> void:
-		get_tree().change_scene_to_file("res://winscreen.tscn")
+	game_win()
