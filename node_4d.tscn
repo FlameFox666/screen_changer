@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cl6lmnwrsnh63"]
+
+[node name="Node4D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 452.0
+offset_top = 113.0
+offset_right = 528.0
+offset_bottom = 193.0
+text = "Boo"
