@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://dimub01iiryjd"]
+[gd_scene load_steps=2 format=3 uid="uid://dimub01iiryjd"]
+
+[ext_resource type="Script" uid="uid://22pp0igpl2xj" path="res://winscreen.gd" id="1_y55kr"]
 
 [node name="win" type="Node2D"]
+script = ExtResource("1_y55kr")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 518.0
@@ -16,3 +19,5 @@ offset_top = 231.0
 offset_right = 681.0
 offset_bottom = 285.0
 text = "You win!.. But what's cost?"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

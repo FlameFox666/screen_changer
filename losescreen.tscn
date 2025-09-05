@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://sjvetd07376j"]
+[gd_scene load_steps=2 format=3 uid="uid://sjvetd07376j"]
+
+[ext_resource type="Script" uid="uid://b8gag8ub6o6fr" path="res://losescreen.gd" id="1_g3uia"]
 
 [node name="lose" type="Node2D"]
+script = ExtResource("1_g3uia")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 584.0
@@ -16,3 +19,5 @@ offset_right = 780.0
 offset_bottom = 475.0
 text = "retry
 "
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
